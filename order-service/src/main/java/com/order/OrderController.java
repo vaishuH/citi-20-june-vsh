@@ -20,8 +20,14 @@ public class OrderController {
 		orderService.insertOrder(order);
 		System.out.println(order.getPrice());
 	}
-	@GetMapping("/{id}")
+	@GetMapping("/{id}" )
 	public OrderVO getOrder(Integer id) {
+		
 		return new OrderVO();
+	}
+	
+	void deleteOrder() {
+		// TODO Auto-generated method stub
+
 	}
 }
